@@ -1,13 +1,21 @@
 {
   "name": "react_crash_todo",
   "version": "0.1.0",
+  "homepage": "https://kyleknollelynch.github.io/React_Todo",
+  "description": "react todo app",
+  "author": "Kyle Lynch",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
