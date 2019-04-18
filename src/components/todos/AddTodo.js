@@ -10,6 +10,8 @@ export class AddTodo extends Component {
     e.preventDefault();
     this.props.addTodo(this.state.title);
     this.setState({ title: '' });
+
+    this.props.history.push('/');
   } 
 
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
