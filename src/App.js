@@ -42,14 +42,14 @@ class App extends Component {
       id: this.state.todos[this.state.todos.length - 1].id + 1,
       title, 
       completed: false
+      
     }
       this.setState({ todos: [...this.state.todos, newTodo] })
   }
 
-
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
           <div className="container">
             <Header />
